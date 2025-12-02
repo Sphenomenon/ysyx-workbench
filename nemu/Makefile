@@ -62,3 +62,5 @@ else
 # Include rules to build NEMU
 include $(NEMU_HOME)/scripts/native.mk
 endif
+CFLAGS += -fPIE
+LDFLAGS += -no-pie
